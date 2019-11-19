@@ -6,11 +6,15 @@ class ReleaseComponent extends React.Component {
   render() {
     console.log(this.props);
     return (
-        <Media body>
-          <Media heading>{this.props.book.title}</Media>
-          {this.props.book.description}
-        </Media>
-
+      <Media>
+      <Media left href="#">
+        <Media className="image" object src={this.props.book.img} alt="book image" />
+      </Media>
+      <Media body>
+      <Media heading>{this.props.book.title}</Media>
+      {this.props.book.description}
+      </Media>
+    </Media>
     );
   }
 }
