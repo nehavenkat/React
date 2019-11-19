@@ -15,11 +15,11 @@ class MainComponent extends React.Component {
                 <NavComponent /> 
                 <JumbotronComponent/>
                 </Col>
-                <Col md="12">              
+                </Row> 
+                <Row>             
                     {MyBook.map((newEntry, index) => 
                         <ReleaseComponent book={newEntry} key={index} />
                     )}
-                </Col>
                 </Row>
 
             </Container>
