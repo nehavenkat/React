@@ -1,6 +1,4 @@
-import React from 'react';
-import { Navbar} from "reactstrap"
-import React, { useState } from 'react';
+import React, { useState }  from 'react';
 import {
   Collapse,
   Navbar,
@@ -13,16 +11,13 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-
 const NavComponent = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
-
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Book Store</NavbarBrand>
+        <NavbarBrand href="/">Book Store </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -41,5 +36,4 @@ const NavComponent = (props) => {
     </div>
   );
 }
-
 export default NavComponent;
