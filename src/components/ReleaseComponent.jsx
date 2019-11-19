@@ -1,22 +1,22 @@
 import React from 'react';
-import { Media } from "reactstrap";
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle,Button
+} from 'reactstrap';
 
-class ReleaseComponent extends React.Component {
-  state = {};
-  render() {
-    console.log(this.props);
-    return (
-      <Media>
-      <Media left href="#">
-        <Media className="image" object src={this.props.book.img} alt="book image" />
-      </Media>
-      <Media body>
-      <Media heading>{this.props.book.title}</Media>
-      {this.props.book.description}
-      </Media>
-    </Media>
-    );
-  }
-}
+const ReleaseComponent  = (props) => {
+  return (
+    <div>
+      <Card>
+        <CardImg top width="100%" src={this.props.book.img} alt="Card imag" />
+        <CardBody>
+          <CardTitle>{this.props.book.title}</CardTitle>
+          <CardText>{this.props.price}</CardText>
+          <Button>Button</Button>
+        </CardBody>
+      </Card>
+    </div>
+  );
+};
 
-export default ReleaseComponent;
+export default ReleaseComponent ;
