@@ -14,7 +14,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-const Example = (props) => {
+const NavComponent = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -42,4 +42,4 @@ const Example = (props) => {
   );
 }
 
-export default Example;
+export default NavComponent;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Row, Col } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import navComponent from './navComponent';
 import MyMenu from "../data/horror.json"
 import SingleDish from './SingleDish';
